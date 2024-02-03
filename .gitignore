@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Project dependencies 
+node_modules/
+vendor/
+dist/
+public/bundle.js
+
+# Media source files
+*.psd
+*.ai
+
+# Image optimization backups
+*_opt.*
+
+# log files
+*.log
+
+# Local configuration files
+*.env
+
+# Binary files
+*.bin

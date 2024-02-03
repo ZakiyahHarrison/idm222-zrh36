@@ -1,0 +1,80 @@
+
+:root{
+    --primary: #393C5E;
+    --white: #F4F4F4;
+    --text: #4D4E52;
+    --green: #3EAF7F;
+    --red: #FF5858;
+    --purple: #C67BF4;
+    --orange: #EC7E4F; 
+}
+/* typography rules here*/
+h1, h2, h3, h4, p{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+    text-wrap: pretty;
+}
+
+p{
+    font-size: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    color: var(--text);
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+
+body{
+    background-color: var(--white);
+    margin: 10;
+    padding: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 390px) {
+    /* styles for screens with a maximum width of 390px go here */
+
+    .home2-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 90%;
+    }
+
+    .home2-item{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .home2-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    /* styles for screens with a maximum width of 1400px go here */
+    .home1-container{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex: auto 4 auto;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    /* styles for screens with a maximum width of 2000px go here */
+}
