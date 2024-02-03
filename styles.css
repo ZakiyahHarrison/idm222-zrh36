@@ -8,6 +8,7 @@
     --purple: #C67BF4;
     --orange: #EC7E4F; 
 }
+
 /* typography rules here*/
 h1, h2, h3, h4, p{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -31,23 +32,48 @@ h4{
     font-size: 1.5rem;
     margin-top: 0.75rem;
 }
+/* ------------------------------------------ */
 
-
-body{
-    background-color: var(--white);
-    margin: 10;
-    padding: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 @media screen and (max-width: 390px) {
-    /* styles for screens with a maximum width of 390px go here */
+    .navbar {
+        background-color:var(--primary) ;
+        width: 100%;
+        height: 4.5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensures the navigation bar stays on top of other elements */
+    }
+    
+    body{
+        background-color: var(--white);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    .home2-container{
+    .home1-container{
+        background-color: var(--primary);
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 2rem;
+        text-align: left;
+        height: 100%;
+        margin-top: 4rem;
+        p{
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+    }
+
+    .home2-container{
+        background-color: var(--white);
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: left;
         width: 90%;
@@ -65,16 +91,30 @@ body{
 }
 
 @media screen and (max-width: 1400px) {
-    /* styles for screens with a maximum width of 1400px go here */
-    .home1-container{
-        align-items: center;
+    .home2-container {
         display: flex;
-        flex-direction: row;
-        flex: auto 4 auto;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        flex-wrap: wrap;
+    } 
+
+    .home2-item{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .column{
+        flex: 1;
+    }
+
+    .home2-item img {
+        width: 100%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 2000px) {
-    /* styles for screens with a maximum width of 2000px go here */
+    
 }
